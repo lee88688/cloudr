@@ -1,0 +1,8 @@
+{
+    "python.pythonPath": "C:\\Users\\lenovo\\.virtualenvs\\cloudr-FAYmkMJH\\Scripts\\python.exe",
+    "python.linting.pylintEnabled": true,
+    "python.linting.pep8Enabled": true,
+    "python.linting.pep8Args": ["--max-line-length=120"],
+    "python.linting.enabled": true,
+    "python.linting.lintOnSave": true
+}
