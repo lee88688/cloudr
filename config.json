@@ -1,5 +1,15 @@
 {
     "db": {
         "url": "sqlite:///:memory:"
-    }
+    },
+    "redis": {
+        "host": "localhost",
+        "port": 6379
+    },
+    "aria2": {
+        "host": "localhost",
+        "port": 6800,
+        "token": null
+    },
+    "file_path": "{root}"
 }
