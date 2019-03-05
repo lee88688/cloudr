@@ -11,5 +11,6 @@
         "port": 6800,
         "token": null
     },
-    "file_path": "{root}"
+    "file_path": "{root}",
+    "split_size": 1048576
 }

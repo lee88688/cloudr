@@ -17,3 +17,5 @@ ARIA2_PORT = config['aria2']['port']
 ARIA2_TOKEN = config['aria2']['token']
 
 FILE_PATH = os.path.join(config['file_path'].format(root=root), '.files')
+
+SPLIT_SIZE = config['split_size']

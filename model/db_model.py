@@ -44,6 +44,15 @@ class FileType(Base):
 
     file_types = ['directory', 'image', 'video', 'audio', 'document', 'zip', 'other']
 
+    @classmethod
+    def insert_all_types(cls):
+        session = Session()
+        type_list = []
+        for t in cls.file_types:
+            type_list.append(cls(filetype=t))
+        session.add_all(type_list)
+        session.commit()
+
     def __repr__(self):
         return '<FileType({}) {}>'.format(self.id, self.filetype)
 
@@ -54,7 +63,7 @@ class OfflineDownload(Base):
     id = Column(Integer, primary_key=True)
     userid = Column(Integer, ForeignKey('user.id'), nullable=False)
     filename = Column(String(40))
-    path = Column(Text, nullable=False)
+    path = Column(Text)
     url = Column(Text, nullable=False)
     gid = Column(String(16))
     completed = Column(Integer, nullable=False)  # from 0 to 100 percent
