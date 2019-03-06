@@ -42,13 +42,12 @@ class FileType(Base):
     id = Column(Integer, primary_key=True)
     filetype = Column(String(10))
 
-    file_types = ['directory', 'image', 'video', 'audio', 'document', 'zip', 'other']
-
     @classmethod
     def insert_all_types(cls):
+        from utils.filetype import file_types
         session = Session()
         type_list = []
-        for t in cls.file_types:
+        for t in file_types:
             type_list.append(cls(filetype=t))
         session.add_all(type_list)
         session.commit()

@@ -1,1 +1,1 @@
-from .filetype import check_file_type
+from .filetype import check_file_type, file_types

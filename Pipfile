@@ -11,7 +11,8 @@ pep8 = "*"
 [packages]
 sqlalchemy = "*"
 requests = "*"
-celery = "*"
+celery = {extras = ["redis"],version = "*"}
+click = "*"
 
 [requires]
 python_version = "3.6"
