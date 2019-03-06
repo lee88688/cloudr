@@ -7,7 +7,7 @@ from utils.aria2 import Aria2
 from utils.filetype import check_file_type
 from config import ARIA2_HOST, ARIA2_PORT, ARIA2_TOKEN, FILE_PATH, SPLIT_SIZE
 
-MAX_READ_SIZE = SPLIT_SIZE
+MAX_READ_SIZE = SPLIT_SIZE * 10
 aria2 = Aria2(ARIA2_HOST, ARIA2_PORT, ARIA2_TOKEN)
 
 

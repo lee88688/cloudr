@@ -68,7 +68,7 @@ class OfflineDownload(Base):
     completed = Column(Integer, nullable=False)  # from 0 to 100 percent
     done = Column(Boolean, nullable=False)
     time = Column(DateTime, nullable=False)
-    error = Column(Integer, nullable=False)
+    error = Column(Integer)
     message = Column(Text)
 
     def __repr__(self):
