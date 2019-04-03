@@ -13,6 +13,7 @@ sqlalchemy = "*"
 requests = "*"
 celery = {extras = ["redis"],version = "*"}
 click = "*"
+flask = "*"
 
 [requires]
 python_version = "3.6"
